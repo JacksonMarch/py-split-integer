@@ -43,7 +43,8 @@ def test_should_add_zeros_when_value_is_less_than_number_of_parts() -> None:
     expected = [0, 0, 1, 1, 1]
     result = split_integer(value, number_of_parts)
     assert result == expected, (
-        f"For value={value} and parts={number_of_parts} expected {expected} but got {result} "
+        f"For value={value} and parts={number_of_parts}"
+        f" expected {expected} but got {result} "
     )
     assert len(result) == number_of_parts, (
         "Quantity of parts should be equal to number of parts"
